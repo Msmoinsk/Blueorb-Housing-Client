@@ -14,27 +14,26 @@ function Header() {
     const dispatch = useDispatch()
 
     return (
-        <div >
-            <div className={`flex w-full justify-between sm:px-[5rem] sm:py-2 items-center border-b dark:bg-[${lightBlack}]`}>
+        <div  >
+            <div className='flex w-full justify-between sm:px-[5rem] sm:py-2 items-center border-b dark:bg-lightBlack'>
                 <div className='w-[20%] cursor-pointer'>
                     <img src="../Logo-sm.png" alt="Logo" height={100} />
                 </div>
-
                 <div className='flex w-[30%] justify-end items-center'>
-                    <div className='w-[10%] cursor-pointer'><IoNotificationsOutline size={20} color={`${primaryGrey}`} /></div>
+                    <div
+                        className='w-[10%] cursor-pointer' data-tooltip-id="my-tooltip" data-tooltip-content="Notifications"><IoNotificationsOutline size={20} color={`${primaryGrey}`} /></div>
                     <div className='cursor-pointer'><SmallProfileCard /></div>
                     <div
                         onClick={() => dispatch(toggleDarkMode())}
-                        className={`ml-4 hover:bg-[#dadada] rounded-xl cursor-pointer p-2`}>
+                        className='ml-4 hover:bg-[#dadada] rounded-xl cursor-pointer p-2'
+                    >
                         {
                             theme ?
                                 <>
-                                    {console.log(theme)}
                                     <MdOutlineLightMode size={30} color={`${textWhite}`} />
                                 </>
                                 :
                                 <>
-                                    {console.log(theme)}
                                     <MdOutlineDarkMode size={30} color={`${primaryBlack}`} />
                                 </>
 
@@ -44,9 +43,9 @@ function Header() {
                 </div>
 
             </div>
-            <div className={`flex w-[100%] py-4 border-b dark:bg-[${lightBlack}]`}>
+            <div className='flex w-[100%] py-4 border-b dark:bg-lightBlack'>
                 <div className='w-[30%]'></div>
-                <div className={`flex justify-around w-full font-[600] text-[18px] dark:text-[${textWhite}]`}>
+                <div className='flex justify-around w-full font-[600] text-[18px] dark:text-textWhite'>
                     <div className='cursor-pointer'>Home</div>
                     <div className='cursor-pointer'>Buy</div>
                     <div className='cursor-pointer'>Rent</div>

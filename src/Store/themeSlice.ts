@@ -4,6 +4,7 @@ export const themeSlice = createSlice({
     name: 'theme',
     initialState: {
         darkMode: false, // default to light mode
+
     },
     reducers: {
         toggleDarkMode: (state) => {

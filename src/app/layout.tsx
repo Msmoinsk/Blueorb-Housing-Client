@@ -1,10 +1,9 @@
-import type { Metadata } from "next";
-import { Manrope } from 'next/font/google'
-import "./globals.css";
-import '@radix-ui/themes/styles.css';
-import { Provider } from "react-redux";
-import { store } from '../Store/store'
 import ReduxProvider from "@/Store/ReduxProvider";
+import '@radix-ui/themes/styles.css';
+import type { Metadata } from "next";
+import { Manrope } from 'next/font/google';
+import { Tooltip } from "react-tooltip";
+import "./globals.css";
 
 const manrope = Manrope({ subsets: ["latin"] });
 

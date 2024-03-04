@@ -13,9 +13,24 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        'primaryBlue': '#475be8',
+        'secondaryBlue': '#dadefa',
+        'primaryBlack': '#11142d',
+        'primaryGrey': '#808191',
+        'primaryGreen': '#2ed480',
+        'primaryRed': '#eb5757',
+        'primaryYellow': '#f2c94c',
+
+        //Dark mode
+        'bgColorDarkBlack': '#111315',
+        'lightBlack': '#1a1d1f',
+        'textWhite': '#efefef',
+        'textGrey': '#6f767e',
+      }
     },
   },
   plugins: [],
-  darkMode: "class"
+  darkMode: "class",
 };
 export default config;
