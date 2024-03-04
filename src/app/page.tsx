@@ -1,24 +1,18 @@
 "use client"
-import { useState } from "react";
 
-
+import Header from "@/components/Header";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleDarkMode } from "@/Store/themeSlice";
 
 export default function Home() {
 
+  const theme = useSelector((state: any) => state.theme.darkMode)
+  const dispatch = useDispatch()
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode)
-  }
-
-
-  const [darkMode, setDarkMode] = useState(false)
 
   return (
-    <div className={darkMode ? 'dark' : ''}>
-
-      <div className="bg-slate-500 dark:bg-red-500">Hello world</div>
-      <button onClick={toggleDarkMode}>Click</button>
-
+    <div className={theme ? 'dark' : ''}>
+      <Header />
     </div>
   );
 }
