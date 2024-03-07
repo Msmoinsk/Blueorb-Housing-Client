@@ -16,6 +16,7 @@ const config: Config = {
       colors: {
         'primaryBlue': '#475be8',
         'secondaryBlue': '#dadefa',
+        'hoverBlue': '##5367f5',
         'primaryBlack': '#11142d',
         'primaryGrey': '#808191',
         'primaryGreen': '#2ed480',

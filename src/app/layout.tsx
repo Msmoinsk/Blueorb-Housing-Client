@@ -2,8 +2,8 @@ import ReduxProvider from "@/Store/ReduxProvider";
 import '@radix-ui/themes/styles.css';
 import type { Metadata } from "next";
 import { Manrope } from 'next/font/google';
-import { Tooltip } from "react-tooltip";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
@@ -17,10 +17,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <ReduxProvider>
       <html lang="en">
-        <body className={manrope.className} >
+        <head>
+          <link rel="icon" href="/logo-tab.png" />
+        </head>
+        <body className={manrope.className} suppressHydrationWarning={true} >
           {children}
         </body>
       </html>
