@@ -8,6 +8,8 @@ import { useEffect } from "react";
 import SearchBar from "@/components/SearchBar";
 import { IoMdSearch } from "react-icons/io";
 import Projects from "@/components/Projects";
+import PropertyCard from "@/components/PropertyCard";
+import Footer from "@/components/Footer";
 
 export default function Home() {
 
@@ -34,15 +36,36 @@ export default function Home() {
           </div>
 
         </div>
-        <div className="grid sm:grid-cols-2 gap-2">
-          <div className="">
-            <Projects projectImageOne="./projects/micl.png" developerLogo="./projects/micl-logo.png" projectName='Woodland Residencies' developerName='MICL' projectAddress="Miraroad" projectCity="Thane" flatTypes='2, 3Bhk' price="1.6 Cr" />
+
+        <div>
+          <div className="flex justify-center font-[600] text-[30px] dark:text-textWhite mb-5">
+            <div>
+              Featured Projects
+            </div>
           </div>
-          <div>
-            <Projects projectImageOne="./projects/durga.png" developerLogo="./projects/durga-logo.png" projectName='Durga Enclave' developerName='Anmol Developers' projectAddress="Miraroad" projectCity="Thane" flatTypes='1, 2 Bhk' price="60 Lakh" />
+
+          <div className="grid sm:grid-cols-2 gap-2">
+            <div className="">
+              <Projects projectImageOne="./projects/micl.png" developerLogo="./projects/micl-logo.png" projectName='Woodland Residencies' developerName='MICL' projectAddress="Miraroad" projectCity="Thane" flatTypes='2, 3Bhk' price="1.6 Cr" />
+            </div>
+            <div>
+              <Projects projectImageOne="./projects/durga.png" developerLogo="./projects/durga-logo.png" projectName='Durga Enclave' developerName='Anmol Developers' projectAddress="Miraroad" projectCity="Thane" flatTypes='1, 2 Bhk' price="60 Lakh" />
+            </div>
           </div>
         </div>
+
+        <div>
+          <div className="flex justify-center mt-[100px] font-[600] text-[30px] dark:text-textWhite mb-5">Popular Properties</div>
+          <PropertyCard />
+        </div>
+
+        <div>
+          <Footer />
+        </div>
+
       </div>
+
+
 
 
     </div>
