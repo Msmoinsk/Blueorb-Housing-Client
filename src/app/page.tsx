@@ -56,7 +56,33 @@ export default function Home() {
 
         <div>
           <div className="flex justify-center mt-[100px] font-[600] text-[30px] dark:text-textWhite ">Popular Properties</div>
-          <PropertyCard />
+          <div className="grid sm:grid-cols-12 gap-4">
+            <div className=" sm:col-span-6 md:col-span-3">
+              <PropertyCard />
+            </div>
+            <div className="sm:col-span-6 md:col-span-3">
+              <PropertyCard />
+            </div>
+            <div className="sm:col-span-6 md:col-span-3">
+              <PropertyCard />
+            </div>
+            <div className="sm:col-span-6 md:col-span-3">
+              <PropertyCard />
+            </div>
+            <div className="sm:col-span-6 md:col-span-3">
+              <PropertyCard />
+            </div>
+            <div className="sm:col-span-6 md:col-span-3">
+              <PropertyCard />
+            </div>
+            <div className="sm:col-span-6 md:col-span-3">
+              <PropertyCard />
+            </div>
+            <div className="sm:col-span-6 md:col-span-3">
+              <PropertyCard />
+            </div>
+          </div>
+
         </div>
       </div>
       <div>
