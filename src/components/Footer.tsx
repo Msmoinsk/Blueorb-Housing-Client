@@ -5,8 +5,8 @@ function Footer() {
 
     const theme = useSelector((state: any) => state.theme.darkMode);
     return (
-        <div>
-            <div className='border'>
+        <div className='bg-textWhite pt-[6rem] pb-[1.5rem] px-[5rem] dark:bg-lightBlack'>
+            <div className='border-b pb-5 border-lightBlack dark:border-textWhite'>
                 <img src="../Logo-blue-sm.png" alt="" />
             </div>
 
