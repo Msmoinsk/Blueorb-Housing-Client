@@ -55,7 +55,7 @@ export default function Home() {
         </div>
 
         <div>
-          <div className="flex justify-center mt-[100px] font-[600] text-[30px] dark:text-textWhite mb-5">Popular Properties</div>
+          <div className="flex justify-center mt-[100px] font-[600] text-[30px] dark:text-textWhite ">Popular Properties</div>
           <PropertyCard />
         </div>
 

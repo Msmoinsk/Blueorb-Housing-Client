@@ -2,8 +2,8 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div>
-            <div className='border'>
+        <div className='mb-[100px]'>
+            <div className='border-b'>
                 <img src="../Logo-blue-sm.png" alt="" />
             </div>
             <div></div>
