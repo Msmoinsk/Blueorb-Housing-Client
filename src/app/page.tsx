@@ -58,13 +58,10 @@ export default function Home() {
           <div className="flex justify-center mt-[100px] font-[600] text-[30px] dark:text-textWhite ">Popular Properties</div>
           <PropertyCard />
         </div>
-
-        <div>
-          <Footer />
-        </div>
-
       </div>
-
+      <div>
+        <Footer />
+      </div>
 
 
 
