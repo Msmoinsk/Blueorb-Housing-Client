@@ -1,4 +1,4 @@
-import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline } from "react-icons/io5";
+import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline, IoPricetagOutline } from "react-icons/io5";
 
 import { useState } from 'react';
 import { textWhite } from "@/constants";
@@ -53,7 +53,7 @@ function PropertyCard() {
 
                 <div className="font-[600] text-[18px] text-textGrey">{area}</div>
             </div>
-            <div className="font-[800] text-[24px]">{price}</div>
+            <div className="font-[800] text-[24px] flex items-center gap-[10px] dark:text-textWhite">{theme ? <IoPricetagOutline color={textWhite} /> : <IoPricetagOutline />}{price}</div>
 
         </div>
     )
