@@ -12,7 +12,7 @@ export default function Home() {
   const theme = useSelector((state: any) => state.theme.darkMode)
   const dispatch = useDispatch()
 
-  const imageUrl = '../hero-2.png'
+  const imageUrl = null;
 
   // useEffect(() => {
   //   if (theme) {
@@ -25,9 +25,10 @@ export default function Home() {
     <div className={theme ? 'dark ' : ''}>
       <Header />
       <div className="dark:bg-bgColorDarkBlack px-[1rem] tablet:px-[5rem]">
-        <div className="w-full flex flex-col items-center pt-[5%] h-[80vh]  bg-no-repeat bg-center" style={{ backgroundImage: `url(${imageUrl})` }}>
+
+        <div className="w-full flex flex-col  justify-center items-center  h-[100vh]  bg-no-repeat bg-center" style={{ backgroundImage: `url(${imageUrl})` }}>
           <div className="font-[900] text-[40px] dark:text-textWhite">Search your dream home in <span className="text-primaryBlue">Miraroad</span></div>
-          <div className="w-full flex justify-center px-[5rem] mt-[3%]">
+          <div className="w-full flex justify-center tablet:px-[5rem]  px-[1rem] mt-[3%]">
             <SearchBar transactionType='all' />
           </div>
 
@@ -51,9 +52,9 @@ export default function Home() {
         </div>
 
         <div>
-          <div className="flex justify-center mt-[100px] mb-[40px] font-[600] text-[30px] dark:text-textWhite ">Popular Properties</div>
-          <div className="tablet:grid grid-cols-12 gap-4 flex overflow-x-auto w-[350px]">
-            <div className=" tablet:col-span-6 laptop:col-span-3">
+          <div className="flex justify-center mt-[100px] font-[600] text-[30px] dark:text-textWhite ">Popular Properties</div>
+          <div className={`tablet:grid tablet:grid-cols-12 tablet:gap-4`}>
+            <div className=" tablet:col-span-6 laptop:col-span-3 ">
               <PropertyCard />
             </div>
             <div className="tablet:col-span-6 laptop:col-span-3">

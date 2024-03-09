@@ -14,4 +14,4 @@ export const textWhite = "#efefef"
 export const textGrey = "#6f767e"
 
 // Button Styles
-export const searchButtonStyles = ""
+export const searchButtonStyles = "hover:shadow-md hover:w-32 transition-width duration-300 ease-in-out"

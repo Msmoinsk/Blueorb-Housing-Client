@@ -28,7 +28,7 @@ function Header() {
     }, []);
 
     return (
-        <div className=''>
+        <div className=' tablet:fixed w-full z-10'>
             <div className='flex w-full justify-between tablet:px-[5rem] px-[1rem] py-2 items-center border-b border-primaryGrey dark:bg-lightBlack bg-textWhite'>
                 <div className='w-[30%] cursor-pointer'>
                     <img src="../Logo-blue-sm.png" alt="Logo" height={100} />
