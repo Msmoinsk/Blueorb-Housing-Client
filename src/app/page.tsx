@@ -53,7 +53,7 @@ export default function Home() {
         <div>
           <div className="flex justify-center mt-[100px] font-[600] text-[30px] dark:text-textWhite ">Popular Properties</div>
           <div className={`tablet:grid tablet:grid-cols-12 tablet:gap-4`}>
-            <div className=" tablet:col-span-6 laptop:col-span-3 flex">
+            <div className=" tablet:col-span-6 laptop:col-span-3">
               <PropertyCard />
             </div>
             <div className="tablet:col-span-6 laptop:col-span-3">
