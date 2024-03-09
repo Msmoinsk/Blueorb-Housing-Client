@@ -25,7 +25,7 @@ function PropertyCard() {
         );
     };
 
-    const propertName = "Durga enclave";
+    const propertyName = "Durga enclave";
     const propertyAddress = "mira road";
     const rooms = "2";
     const bathroom = "1";
@@ -42,12 +42,13 @@ function PropertyCard() {
             </div>
 
             <div className="border-b border-lightBlack pb-5">
-                <div className=" font-[800] text-[24px]  dark:text-textWhite my-2">{propertName}</div>
+                <div className=" font-[800] text-[24px]  dark:text-textWhite my-2">{propertyName}</div>
                 <div className="font-[600] text-[18px] text-textGrey flex items-center gap-[2px]">{theme ? <FaLocationDot color={textWhite} /> : <FaLocationDot />}{propertyAddress}</div>
 
-                <div className="md:flex justify-start font-[600] text-[18px] text-textGrey my-2">
+                <div className="flex justify-start font-[600] laptop:text-[14px] text-textGrey my-2">
                     <div className="flex items-center">{theme ? <MdOutlineBedroomChild color={textWhite} /> : <MdOutlineBedroomChild />}{rooms} bedrooms</div>
-                    <div className="flex items-center md:ml-5 ">{theme ? <MdOutlineBathroom
+
+                    <div className="flex items-center ml-5 ">{theme ? <MdOutlineBathroom
                         color={textWhite} /> : <MdOutlineBathroom />}{bathroom} bathrooms</div>
                 </div>
 

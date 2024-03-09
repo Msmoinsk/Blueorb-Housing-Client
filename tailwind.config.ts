@@ -28,7 +28,17 @@ const config: Config = {
         'lightBlack': '#1a1d1f',
         'textWhite': '#efefef',
         'textGrey': '#6f767e',
-      }
+      },
+      screens: {
+
+        'mobile': '375px',
+
+        'tablet': '601px',
+
+        'laptop': '1024px',
+
+        'desktop': '1280px',
+      },
     },
   },
   plugins: [],
