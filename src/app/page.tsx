@@ -1,15 +1,11 @@
 "use client"
 
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { useDispatch, useSelector } from "react-redux";
-import { toggleDarkMode } from "@/Store/themeSlice";
-import { Tooltip } from "react-tooltip";
-import { useEffect } from "react";
-import SearchBar from "@/components/SearchBar";
-import { IoMdSearch } from "react-icons/io";
 import Projects from "@/components/Projects";
 import PropertyCard from "@/components/PropertyCard";
-import Footer from "@/components/Footer";
+import SearchBar from "@/components/SearchBar";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function Home() {
 
@@ -28,7 +24,7 @@ export default function Home() {
   return (
     <div className={theme ? 'dark ' : ''}>
       <Header />
-      <div className="dark:bg-bgColorDarkBlack  px-[5rem]">
+      <div className="dark:bg-bgColorDarkBlack px-[1rem] tablet:px-[5rem]">
         <div className="w-full flex flex-col items-center pt-[5%] h-[80vh]  bg-no-repeat bg-center" style={{ backgroundImage: `url(${imageUrl})` }}>
           <div className="font-[900] text-[40px] dark:text-textWhite">Search your dream home in <span className="text-primaryBlue">Miraroad</span></div>
           <div className="w-full flex justify-center px-[5rem] mt-[3%]">
@@ -56,29 +52,29 @@ export default function Home() {
 
         <div>
           <div className="flex justify-center mt-[100px] mb-[40px] font-[600] text-[30px] dark:text-textWhite ">Popular Properties</div>
-          <div className="grid sm:grid-cols-12 gap-4">
-            <div className=" sm:col-span-6 md:col-span-3">
+          <div className="tablet:grid grid-cols-12 gap-4 flex overflow-x-auto w-[350px]">
+            <div className=" tablet:col-span-6 laptop:col-span-3">
               <PropertyCard />
             </div>
-            <div className="sm:col-span-6 md:col-span-3">
+            <div className="tablet:col-span-6 laptop:col-span-3">
               <PropertyCard />
             </div>
-            <div className="sm:col-span-6 md:col-span-3">
+            <div className="tablet:col-span-6 laptop:col-span-3">
               <PropertyCard />
             </div>
-            <div className="sm:col-span-6 md:col-span-3">
+            <div className="tablet:col-span-6 laptop:col-span-3">
               <PropertyCard />
             </div>
-            <div className="sm:col-span-6 md:col-span-3">
+            <div className="tablet:col-span-6 laptop:col-span-3">
               <PropertyCard />
             </div>
-            <div className="sm:col-span-6 md:col-span-3">
+            <div className="tablet:col-span-6 laptop:col-span-3">
               <PropertyCard />
             </div>
-            <div className="sm:col-span-6 md:col-span-3">
+            <div className="tablet:col-span-6 laptop:col-span-3">
               <PropertyCard />
             </div>
-            <div className="sm:col-span-6 md:col-span-3">
+            <div className="tablet:col-span-6 laptop:col-span-3">
               <PropertyCard />
             </div>
           </div>
