@@ -1,4 +1,4 @@
-import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline } from "react-icons/io5";
+import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline, IoPricetagOutline } from "react-icons/io5";
 
 import { useState } from 'react';
 import { textWhite } from "@/constants";
@@ -45,16 +45,16 @@ function PropertyCard() {
                 <div className=" font-[800] text-[24px]  dark:text-textWhite my-2">{propertyName}</div>
                 <div className="font-[600] text-[18px] text-textGrey flex items-center gap-[2px]">{theme ? <FaLocationDot color={textWhite} /> : <FaLocationDot />}{propertyAddress}</div>
 
-                <div className="flex justify-start font-[600] laptop:text-[14px] text-textGrey my-2">
+                <div className="tablet:flex justify-start font-[600] laptop:text-[14px] text-textGrey my-2">
                     <div className="flex items-center">{theme ? <MdOutlineBedroomChild color={textWhite} /> : <MdOutlineBedroomChild />}{rooms} bedrooms</div>
 
-                    <div className="flex items-center ml-5 ">{theme ? <MdOutlineBathroom
+                    <div className="flex items-center tablet:ml-5 ">{theme ? <MdOutlineBathroom
                         color={textWhite} /> : <MdOutlineBathroom />}{bathroom} bathrooms</div>
                 </div>
 
                 <div className="font-[600] text-[18px] text-textGrey">{area}</div>
             </div>
-            <div className="font-[800] text-[24px]">{price}</div>
+            <div className="font-[800] text-[24px] flex items-center gap-[10px] dark:text-textWhite">{theme ? <IoPricetagOutline color={textWhite} /> : <IoPricetagOutline />}{price}</div>
 
         </div>
     )
