@@ -44,15 +44,20 @@ export default function Home() {
 
         </div>
 
-        <div className="">
 
+
+        <div>
           <div>
             <SectionHeading text="Featured projects" />
           </div>
+          <div className="flex justify-center items-center py-[2rem] ">
+            <Button text="Explore more" style="w-[10%]" />
+          </div>
+          <FeaturedProjects />
         </div>
 
 
-       <FeaturedProjects/>
+
 
         <div className="">
           <SectionHeading text="Latest properties" />
