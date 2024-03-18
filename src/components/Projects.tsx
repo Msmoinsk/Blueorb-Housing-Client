@@ -1,7 +1,5 @@
-import { textWhite } from '@/constants';
 import React from 'react'
 import { BsCurrencyRupee } from "react-icons/bs";
-import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline } from 'react-icons/io5';
 
 interface PorjectProps {
     projectImageOne: string
@@ -29,15 +27,12 @@ function Projects(props: PorjectProps) {
     return (
         <div className='w-full border rounded-[8px]'>
             <div className='h-[300px] rounded-t bg-contain hover:bg-cover transition duration-800 ease-in-out' style={{ backgroundImage: `url(${projectImageOne})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
-            </div>
-      
 
-            <div className='flex justify-between  px-[1rem] py-4' >
-            
+            </div>
+            <div className='flex justify-between px-[1rem] py-4' >
                 <div className='flex'>
                     <div className='mr-3 h-[80px] w-[80px]' style={{ backgroundImage: `url(${developerLogo})`, backgroundSize: "contain", backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}></div>
                     <div>
-                        
                         <div className='font-[800] text-[24px] dark:text-textWhite'>{projectName}</div>
                         <div className='font-[600] text-textGrey'>{`by ${developerName}`}</div>
                         <div className='font-[600] text-textGrey'>{`${projectAddress},${projectCity}`}</div>
