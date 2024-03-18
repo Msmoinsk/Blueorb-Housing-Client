@@ -25,8 +25,8 @@ function Projects(props: PorjectProps) {
 
 
     return (
-        <div className='w-full border rounded-[8px]'>
-            <div className='h-[300px] rounded-t bg-contain hover:bg-cover transition duration-800 ease-in-out' style={{ backgroundImage: `url(${projectImageOne})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+        <div className=' border rounded-[8px]'>
+            <div className=' tablet:w-full tablet:h-[300px] rounded-t bg-cover ' style={{ backgroundImage: `url(${projectImageOne})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
 
             </div>
             <div className='flex justify-between px-[1rem] py-4' >

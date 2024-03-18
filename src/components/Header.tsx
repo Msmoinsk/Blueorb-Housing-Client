@@ -2,8 +2,7 @@
 
 import { toggleDarkMode } from '@/Store/themeSlice';
 import SmallProfileCard from '@/components/SmallProfileCard';
-import { lightBlack, primaryBlack, primaryGrey, textGrey, textWhite } from '@/constants/index';
-import { useEffect, useState } from 'react';
+import { primaryBlack, primaryGrey, textWhite } from '@/constants/index';
 import { IoNotificationsOutline } from "react-icons/io5";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 import { useDispatch, useSelector } from 'react-redux';
@@ -12,30 +11,20 @@ import { useDispatch, useSelector } from 'react-redux';
 
 function Header() {
     const theme = useSelector((state: any) => state.theme.darkMode)
+    const isCurrentlyMobile = useSelector((state: any) => state.responsive.isMobile)
     const dispatch = useDispatch()
-    const [isMobile, setIsMobile] = useState(false);
 
 
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth >= 643);
-        };
-
-        handleResize();
-        window.addEventListener('resize', handleResize);
-
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
 
     return (
-        <div className=' tablet:fixed w-full z-10'>
+        <div className=' tablet:fixed w-[100vw] z-10'>
             <div className='flex w-full justify-between tablet:px-[5rem] px-[1rem] py-2 items-center border-b border-primaryGrey dark:bg-lightBlack bg-textWhite'>
                 <div className='w-[30%] cursor-pointer'>
                     <img src="../Logo-blue-sm.png" alt="Logo" height={100} />
                 </div>
                 <div className='flex w-[30%] justify-end items-center'>
 
-                    {isMobile && (
+                    {isCurrentlyMobile && (
 
                         <div
                             className='w-[10%] cursor-pointer'
@@ -67,7 +56,7 @@ function Header() {
                 </div>
 
             </div>
-            {isMobile && (
+            {!isCurrentlyMobile && (
                 <div className='grid grid-cols-12 border-b  dark:bg-lightBlack bg-textWhite'>
                     <div className='sm:col-span-3'></div>
                     <div className='flex justify-around w-full font-[400] text-[18px] dark:text-textWhite sm:col-span-6'>

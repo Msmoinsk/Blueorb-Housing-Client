@@ -1,9 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import themeReducer from './themeSlice'
-import { themeSlice } from "./themeSlice";
+import responsiveReducer, { responsiveSlice } from "./responsiveSlice";
+import themeReducer, { themeSlice } from './themeSlice';
 
 export const store = configureStore({
     reducer: {
-        [themeSlice.name]: themeReducer
+        [themeSlice.name]: themeReducer,
+        [responsiveSlice.name]: responsiveReducer
     }
 })
