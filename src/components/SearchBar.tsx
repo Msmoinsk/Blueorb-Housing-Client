@@ -30,7 +30,7 @@ const SearchBar = (props: SearchProps) => {
           </div></div>
       </div>
 
-      <div className='w-[20%] border-r px-2 border-primaryGrey flex items-center gap-2'>
+      <div className='w-[20%] border-r px-2  border-primaryGrey flex items-center gap-2'>
         <div> {theme ? <TbCoinRupeeFilled color={primaryBlue} size={30} /> : <TbCoinRupeeFilled color={primaryBlue} size={30} />}</div>
         <div>
           <div className='dark:text-textGrey pl-1 '>Price</div>
