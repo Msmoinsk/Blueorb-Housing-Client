@@ -54,7 +54,6 @@ function PropertyCard() {
 
                 <div className="font-[600] text-[18px] text-textGrey">{area}</div>
             </div>
-            
             <div className="font-[800] text-[24px] flex items-center gap-[10px] dark:text-textWhite">{theme ? <IoPricetagOutline color={textWhite} /> : <IoPricetagOutline />}{price}</div>
 
         </div>

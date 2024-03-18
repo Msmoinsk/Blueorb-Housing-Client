@@ -5,22 +5,12 @@ import Header from "@/components/Header";
 import Projects from "@/components/Projects";
 import PropertyCard from "@/components/PropertyCard";
 import SearchBar from "@/components/SearchBar";
-import SectionHeading from "@/components/SectionHeading";
-import { primaryBlue, primaryGrey, textWhite } from "@/constants";
-import Button from "../components/Button";
-import { useEffect, useRef, useState } from "react";
-import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
-import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight, MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
-import FeaturedProjects from "@/components/FeaturedProjects";
 
 export default function Home() {
 
-
   const theme = useSelector((state: any) => state.theme.darkMode)
   const dispatch = useDispatch()
-
-
 
   const imageUrl = null;
 
@@ -44,25 +34,26 @@ export default function Home() {
 
         </div>
 
-
-
         <div>
-          <div>
-            <SectionHeading text="Featured projects" />
+          <div className="flex justify-center font-[600] text-[30px] dark:text-textWhite mb-5">
+            <div>
+              Featured Projects
+            </div>
           </div>
-          <div className="flex justify-center items-center py-[2rem] ">
-            <Button text="Explore more" style="w-[10%]" />
+
+          <div className="grid sm:grid-cols-2 gap-2">
+            <div className="">
+              <Projects projectImageOne="./projects/micl.png" developerLogo="./projects/micl-logo.png" projectName='Woodland Residencies' developerName='MICL' projectAddress="Miraroad" projectCity="Thane" flatTypes='2, 3Bhk' price="1.6 Cr" />
+            </div>
+            <div>
+              <Projects projectImageOne="./projects/durga.png" developerLogo="./projects/durga-logo.png" projectName='Durga Enclave' developerName='Anmol Developers' projectAddress="Miraroad" projectCity="Thane" flatTypes='1, 2 Bhk' price="60 Lakh" />
+            </div>
           </div>
-          <FeaturedProjects />
         </div>
 
-
-
-
-        <div className="">
-          <SectionHeading text="Latest properties" />
-
-          <div className={`tablet:grid tablet:grid-cols-12 tablet:gap-4 `}>
+        <div>
+          <div className="flex justify-center mt-[100px] font-[600] text-[30px] dark:text-textWhite ">Popular Properties</div>
+          <div className={`tablet:grid tablet:grid-cols-12 tablet:gap-4`}>
             <div className=" tablet:col-span-6 laptop:col-span-3 ">
               <PropertyCard />
             </div>
