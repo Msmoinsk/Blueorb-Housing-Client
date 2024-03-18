@@ -37,8 +37,8 @@ function PropertyCard() {
 
             <div style={{ backgroundImage: `url("${images[currentImageIndex]}")`, height: '200px' }} className='bg-cover bg-no-repeat flex justify-between items-center  rounded-lg '>
 
-                <div className="cursor-pointer hover:bg-lightBlack h-[100%] flex items-center hover:rounded-lg px-2 hover:opacity-50" onClick={handlePrevClick}><IoArrowBackCircleOutline color={textWhite} size={40} /></div>
-                <div className="cursor-pointer  hover:bg-lightBlack  h-[100%] flex items-center hover:rounded-lg px-2 hover:opacity-50" onClick={handleNextClick}><IoArrowForwardCircleOutline color={textWhite} size={40} /></div>
+                <div className="cursor-pointer hover:bg-lightBlack h-[100%] flex items-center hover:rounded-lg px-2 hover:opacity-50 disable-selection" onClick={handlePrevClick}><IoArrowBackCircleOutline color={textWhite} size={40} /></div>
+                <div className="cursor-pointer hover:bg-lightBlack  h-[100%] flex items-center hover:rounded-lg px-2 hover:opacity-50 disable-selection" onClick={handleNextClick}><IoArrowForwardCircleOutline color={textWhite} size={40} /></div>
             </div>
 
             <div className="border-b border-lightBlack pb-5">

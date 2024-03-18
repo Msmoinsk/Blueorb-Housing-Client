@@ -31,17 +31,20 @@ function Projects(props: PorjectProps) {
             </div>
             <div className='flex justify-between px-[1rem] py-4' >
                 <div className='flex'>
-                    <div className='mr-3 h-[80px] w-[80px]' style={{ backgroundImage: `url(${developerLogo})`, backgroundSize: "contain", backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}></div>
+                    <div className='mr-2 h-[80px] w-[80px]' style={{ backgroundImage: `url(${developerLogo})`, backgroundSize: "contain", backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}></div>
                     <div>
-                        <div className='font-[800] text-[24px] dark:text-textWhite'>{projectName}</div>
-                        <div className='font-[600] text-textGrey'>{`by ${developerName}`}</div>
-                        <div className='font-[600] text-textGrey'>{`${projectAddress},${projectCity}`}</div>
+                        <div className='font-[800] desktop:text-[18px] dark:text-textWhite'>{projectName}</div>
+                        <div className='font-[600] desktop:text-[14px] text-textGrey'>{`by ${developerName}`}</div>
+                        <div className='font-[600] desktop:text-[14px] text-textGrey'>{`${projectAddress},${projectCity}`}</div>
                     </div>
                 </div>
 
-                <div>
+                <div className='flex flex-col items-end'>
                     <div className='font-[600] text-textGrey'>{`${flatTypes}`}</div>
-                    <div className=' flex justify-center items-center font-[600] text-textGrey'><BsCurrencyRupee /><span className='font-[800] text-lightBlack dark:text-textGrey'>{price}</span> &nbsp; Onwards</div>
+                    <div className='flex flex-col font-[600] text-textGrey desktop:text-[15px]'>
+                        <div className='flex justify-center items-center '><BsCurrencyRupee /><span className='font-[800] text-lightBlack dark:text-textGrey '>{price}</span></div>
+                        <div>Onwards</div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -24,7 +24,7 @@ function Header() {
                 </div>
                 <div className='flex w-[30%] justify-end items-center'>
 
-                    {isCurrentlyMobile && (
+                    {!isCurrentlyMobile && (
 
                         <div
                             className='w-[10%] cursor-pointer'
