@@ -61,8 +61,8 @@ function Header() {
                     <div className='sm:col-span-3'></div>
                     <div className='flex justify-around w-full font-[400] text-[18px] dark:text-textWhite sm:col-span-6'>
                         <div className='cursor-pointer hover:bg-primaryBlue px-6 py-2 hover:text-textWhite'>Home</div>
-                        <div className='cursor-pointer hover:bg-primaryBlue px-6 py-2 hover:text-textWhite'>Buy</div>
-                        <div className='cursor-pointer hover:bg-primaryBlue px-6 py-2 hover:text-textWhite'>Rent</div>
+                        <div className='cursor-pointer hover:bg-primaryBlue px-6 py-2 hover:text-textWhite'>Projects</div>
+                        <div className='cursor-pointer hover:bg-primaryBlue px-6 py-2 hover:text-textWhite'>Properties</div>
                         <div className='cursor-pointer hover:bg-primaryBlue px-6 py-2 hover:text-textWhite'>About</div>
                         <div className='cursor-pointer hover:bg-primaryBlue px-6 py-2 hover:text-textWhite'>Contact</div>
                     </div>

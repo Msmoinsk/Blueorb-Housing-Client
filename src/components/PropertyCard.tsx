@@ -33,7 +33,7 @@ function PropertyCard() {
     const area = "1200sqft";
 
     return (
-        <div className='dark:bg-lightBlack p-5 rounded-xl bg-textWhite '>
+        <div className='dark:bg-lightBlack p-5 rounded-xl bg-textWhite  cursor-pointer hover:scale-105 transition-transform duration-300 '>
 
             <div style={{ backgroundImage: `url("${images[currentImageIndex]}")`, height: '200px' }} className='bg-cover bg-no-repeat flex justify-between items-center  rounded-lg '>
 

@@ -5,9 +5,7 @@ import FeaturedProjects from "@/components/FeaturedProjects";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PopularProjects from "@/components/PopularProjects";
-import Projects from "@/components/Projects";
 import SearchBar from "@/components/SearchBar";
-import SectionHeading from "@/components/SectionHeading";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
