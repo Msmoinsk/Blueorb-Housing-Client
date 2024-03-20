@@ -8,6 +8,7 @@ import PopularProjects from "@/components/PopularProjects";
 import SearchBar from "@/components/SearchBar";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import '@radix-ui/themes/styles.css';
 
 export default function Page() {
 
@@ -37,10 +38,8 @@ export default function Page() {
 
   return (
     <div className={theme ? 'dark ' : ''}>
-      <Header />
       <div className="dark:bg-bgColorDarkBlack px-[1rem] tablet:px-[5rem]">
-
-        <div className="w-full flex flex-col justify-center items-center h-[100vh]  bg-no-repeat bg-center">
+        <div className="w-full flex flex-col justify-center items-center h-[80vh]  bg-no-repeat bg-center">
           <div className="font-[900] tablet:text-[40px] text-[24px] dark:text-textWhite text-center">Search your dream home in <span className="text-primaryBlue">Miraroad</span></div>
           <div className="w-full flex justify-center tablet:px-[5rem]  px-[1rem] mt-[3%]">
             <SearchBar transactionType='all' />

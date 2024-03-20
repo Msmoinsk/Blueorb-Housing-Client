@@ -25,6 +25,7 @@ export default function RootLayout({
           <link rel="icon" href="/logo-tab.png" />
         </head>
         <body className={manrope.className} suppressHydrationWarning={true} >
+          <Header />
           {children}
         </body>
       </html>
