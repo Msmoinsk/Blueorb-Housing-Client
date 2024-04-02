@@ -10,7 +10,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import '@radix-ui/themes/styles.css';
 
-export default function Page() {
+export default function page() {
 
 
   const theme = useSelector((state: any) => state.theme.darkMode)
