@@ -16,7 +16,7 @@ import { TfiViewList } from "react-icons/tfi";
 import { useDispatch, useSelector } from "react-redux";
 
 const page = () => {
-    
+
     const theme = useSelector((state: any) => state.theme.darkMode);
     const gridView = useSelector((state: any) => state.interface.gridView);
     const dispatch = useDispatch();
@@ -88,7 +88,7 @@ const page = () => {
                         numOfProperties.map((item) => {
                             return (
                                 <div key={item} className="col-span-3">
-                                    <Projects />
+                                    <Projects projectImageOne="./projects/durga.png" developerLogo="./projects/durga-logo.png" projectName='Durga Enclave' developerName='Anmol Developers' projectAddress="Miraroad" projectCity="Thane" flatTypes='1, 2 Bhk' price="60 Lakh" />
                                 </div>
                             )
                         })
