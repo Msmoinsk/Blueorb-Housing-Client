@@ -16,9 +16,10 @@ import { TfiViewList } from "react-icons/tfi";
 import { useDispatch, useSelector } from "react-redux";
 
 const page = () => {
+  
     const [selectedState, setSelectedState] = useState<string[]>([]);
-    const theme: boolean = useSelector((state: any) => state.theme.darkMode);
-    const gridView: boolean = useSelector((state: any) => state.interface.gridView);
+    const theme = useSelector((state: any) => state.theme.darkMode);
+    const gridView = useSelector((state: any) => state.interface.gridView);
     const dispatch = useDispatch();
     const numOfProperties: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
@@ -104,6 +105,7 @@ const page = () => {
                         numOfProperties.map((item) => {
                             return (
                                 <div key={item} className="col-span-3">
+
                                     <Projects projectImageOne="./projects/micl.png" developerLogo="./projects/micl-logo.png" projectName='Woodland Residencies' developerName='MICL' projectAddress="Miraroad" projectCity="Thane" flatTypes='2, 3Bhk' price="1.6 Cr" />
                                 </div>
                             )
